@@ -17,7 +17,7 @@ const UpdateProduct = () => {
     },[])
 
     const getProduct = async ()=>{
-        let result = await fetch(`http://localhost:5000/product/${param.id}`)
+        let result = await fetch(`https://e-commerce-hjvt.onrender.com/product/${param.id}`)
         result = await result.json()
         setName(result.name)
         setPrice(result.price)

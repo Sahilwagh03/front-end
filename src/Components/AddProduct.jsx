@@ -17,7 +17,7 @@ export const AddProduct = () => {
 
         const userId = JSON.parse(localStorage.getItem('user'))._id;
 
-        let result = await fetch('http://localhost:5000/add-product',{
+        let result = await fetch('https://e-commerce-hjvt.onrender.com/add-product',{
             method:"POST",
             body:JSON.stringify({name,price,category,userId,company}),
             headers:{'Content-Type':'application/json'}

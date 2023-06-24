@@ -9,13 +9,13 @@ export const ProductList = () => {
 
   const getProducts = async () => {
 
-    let result = await fetch('http://localhost:5000/products')
+    let result = await fetch('https://e-commerce-hjvt.onrender.com/products')
     result = await result.json()
     setProduct(result)
   }
 
   const deleteProduct =async (id)=>{
-    let result  = await fetch(`http://localhost:5000/product/${id}`,{
+    let result  = await fetch(`https://e-commerce-hjvt.onrender.com/product/${id}`,{
       method:"Delete"
     })
     result = await result.json()
@@ -29,7 +29,7 @@ export const ProductList = () => {
   const searchHandle = async (event)=>{
     let key = event.target.value
     if(key){
-      let result = await fetch(`http://localhost:5000/Search/${key}`)
+      let result = await fetch(`https://e-commerce-hjvt.onrender.com/Search/${key}`)
       result = await result.json()
       if(result){
       setProduct(result)

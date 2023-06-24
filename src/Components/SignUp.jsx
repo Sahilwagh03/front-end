@@ -17,7 +17,7 @@ export const SignUp = () => {
 
     const collectData = async ()=>{
         console.log(name,email,password)
-        let result = await fetch('http://localhost:5000/register',{
+        let result = await fetch('https://e-commerce-hjvt.onrender.com/register',{
             method:'POST',
             body:JSON.stringify({name,email,password}),
             headers:{
