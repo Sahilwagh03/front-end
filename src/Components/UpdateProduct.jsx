@@ -28,7 +28,7 @@ const UpdateProduct = () => {
     const UpdateProduct = async ()=>{
         console.log(name,price,category,company)
 
-        let result = await fetch(`http://localhost:5000/update/${param.id}`,{
+        let result = await fetch(`https://e-commerce-hjvt.onrender.com/update/${param.id}`,{
             method:'PUT',
             body:JSON.stringify({name,price,category,company}),
             headers:{'Content-Type':'application/json'}
