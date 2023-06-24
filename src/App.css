@@ -1,38 +1,95 @@
-.App {
+.logo {
+  width: 30px;
+  border-radius: 20px;
+  height: 30px;
+  float: left;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.Nav_ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.Nav_ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.Nav_ul {
+  margin: 0;
+  padding: 5px;
+  background: deepskyblue;
+}
+
+.nav_right {
+  text-align: right;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: deepskyblue;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputBox {
+  margin: 10px;
+  padding: 8px;
+  width: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.input_group,
+.product {
+  display: grid;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+}
+
+.input_group h1 {
+  color: deepskyblue;
+}
+
+.btn_signUp,
+.btn {
+  width: 100px;
+  margin-left: 10px;
+  background: deepskyblue;
+  margin-top: 20px;
+  border: unset;
+  padding: 10px;
+  border-radius: 20px;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.Error_message {
+  color: red;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-list{
+  text-align: center;
+  margin-top:50px ;
+}
+.product-list ul{
+  margin: 0;
+}
+.product-list ul li{
+  display: inline-block;
+  border: 1px solid black;
+  padding: 5px;
+  width: 150px;
+}
+
+.search_box{
+  width: 400px;
+  margin: 20px;
+  font-size: 1rem;
+  height: 40px;
 }
